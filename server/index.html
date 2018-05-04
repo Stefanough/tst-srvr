@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io('http://localhost:8080');
+      socket.connect();
+      socket.emit('my other event', 'hello humans');
+      socket.on('news', function (data) { 
+        console.log(data);
+        socket.emit('my other event', { my: 'data' });
+      });
+    </script>
+</head>
+<body>
+yo    
+</body>
+</html>

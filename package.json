@@ -1,0 +1,25 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "like the white sands missle range",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stefanough/tst-srvr.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "stefan armijo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stefanough/tst-srvr/issues"
+  },
+  "homepage": "https://github.com/Stefanough/tst-srvr#readme",
+  "dependencies": {
+    "socket.io": "^2.1.0"
+  },
+  "scripts": {
+    "start": "node server/server.js"
+  }
+}
